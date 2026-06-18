@@ -1,176 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teste Pratico - Paolla Olsen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div id="menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="logo">
-                <img src="https://i.imgur.com/hcHpqsZ.jpeg" alt="Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#sobre" class="link">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="link">Portfólio</a>
-                    </li>
-                    <li>
-                        <a href="#contato" class="link">Contato</a>
-                    </li>
-                </ul>
-                <div class="close" id="close">x</div>
-            </nav>
-            <ul class="social">
-                <li>
-                    <a href="https://www.instagram.com.br" target="_blank">
-                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.946 5.33081C7.84058 5.33081 5.33569 7.83569 5.33569 10.9412C5.33569 14.0466 7.84058 16.5515 10.946 16.5515C14.0515 16.5515 16.5564 14.0466 16.5564 10.9412C16.5564 7.83569 14.0515 5.33081 10.946 5.33081ZM10.946 14.5886C8.93921 14.5886 7.29858 12.9529 7.29858 10.9412C7.29858 8.92944 8.93433 7.2937 10.946 7.2937C12.9578 7.2937 14.5935 8.92944 14.5935 10.9412C14.5935 12.9529 12.9529 14.5886 10.946 14.5886ZM18.0945 5.10132C18.0945 5.82886 17.5085 6.40991 16.7859 6.40991C16.0584 6.40991 15.4773 5.82397 15.4773 5.10132C15.4773 4.37866 16.0632 3.79272 16.7859 3.79272C17.5085 3.79272 18.0945 4.37866 18.0945 5.10132ZM21.8103 6.42944C21.7273 4.67651 21.3269 3.12378 20.0427 1.84448C18.7634 0.565185 17.2107 0.164795 15.4578 0.0769043C13.6511 -0.0256348 8.23608 -0.0256348 6.42944 0.0769043C4.6814 0.159912 3.12866 0.560303 1.84448 1.8396C0.560303 3.1189 0.164795 4.67163 0.0769043 6.42456C-0.0256348 8.2312 -0.0256348 13.6462 0.0769043 15.4529C0.159912 17.2058 0.560303 18.7585 1.84448 20.0378C3.12866 21.3171 4.67651 21.7175 6.42944 21.8054C8.23608 21.908 13.6511 21.908 15.4578 21.8054C17.2107 21.7224 18.7634 21.322 20.0427 20.0378C21.322 18.7585 21.7224 17.2058 21.8103 15.4529C21.9128 13.6462 21.9128 8.23608 21.8103 6.42944ZM19.4763 17.3914C19.0955 18.3484 18.3582 19.0857 17.3962 19.4714C15.9558 20.0427 12.5378 19.9109 10.946 19.9109C9.35425 19.9109 5.9314 20.0378 4.49585 19.4714C3.53882 19.0906 2.80151 18.3533 2.41577 17.3914C1.84448 15.9509 1.97632 12.533 1.97632 10.9412C1.97632 9.34937 1.84937 5.92651 2.41577 4.49097C2.79663 3.53394 3.53394 2.79663 4.49585 2.41089C5.93628 1.8396 9.35425 1.97144 10.946 1.97144C12.5378 1.97144 15.9607 1.84448 17.3962 2.41089C18.3533 2.79175 19.0906 3.52905 19.4763 4.49097C20.0476 5.9314 19.9158 9.34937 19.9158 10.9412C19.9158 12.533 20.0476 15.9558 19.4763 17.3914Z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com.br" target="_blank">
-                       <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5122 14.0625L13.2065 9.53809H8.86523V6.60205C8.86523 5.36426 9.47168 4.15771 11.416 4.15771H13.3896V0.305664C13.3896 0.305664 11.5986 0 9.88623 0C6.31104 0 3.97412 2.16699 3.97412 6.08984V9.53809H0V14.0625H3.97412V25H8.86523V14.0625H12.5122Z"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+      <div class="container">
+        <div id="menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="logo">
+          <img src="https://i.imgur.com/hcHpqsZ.jpeg" alt="Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#sobre" class="link">Sobre</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="link">Portfólio</a>
+            </li>
+            <li>
+              <a href="#contato" class="link">Contato</a>
+            </li>
+          </ul>
+          <div class="close" id="close">x</div>
+        </nav>
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com.br" target="_blank">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.946 5.33081C7.84058 5.33081 5.33569 7.83569 5.33569 10.9412C5.33569 14.0466 7.84058 16.5515 10.946 16.5515C14.0515 16.5515 16.5564 14.0466 16.5564 10.9412C16.5564 7.83569 14.0515 5.33081 10.946 5.33081ZM10.946 14.5886C8.93921 14.5886 7.29858 12.9529 7.29858 10.9412C7.29858 8.92944 8.93433 7.2937 10.946 7.2937C12.9578 7.2937 14.5935 8.92944 14.5935 10.9412C14.5935 12.9529 12.9529 14.5886 10.946 14.5886ZM18.0945 5.10132C18.0945 5.82886 17.5085 6.40991 16.7859 6.40991C16.0584 6.40991 15.4773 5.82397 15.4773 5.10132C15.4773 4.37866 16.0632 3.79272 16.7859 3.79272C17.5085 3.79272 18.0945 4.37866 18.0945 5.10132ZM21.8103 6.42944C21.7273 4.67651 21.3269 3.12378 20.0427 1.84448C18.7634 0.565185 17.2107 0.164795 15.4578 0.0769043C13.6511 -0.0256348 8.23608 -0.0256348 6.42944 0.0769043C4.6814 0.159912 3.12866 0.560303 1.84448 1.8396C0.560303 3.1189 0.164795 4.67163 0.0769043 6.42456C-0.0256348 8.2312 -0.0256348 13.6462 0.0769043 15.4529C0.159912 17.2058 0.560303 18.7585 1.84448 20.0378C3.12866 21.3171 4.67651 21.7175 6.42944 21.8054C8.23608 21.908 13.6511 21.908 15.4578 21.8054C17.2107 21.7224 18.7634 21.322 20.0427 20.0378C21.322 18.7585 21.7224 17.2058 21.8103 15.4529C21.9128 13.6462 21.9128 8.23608 21.8103 6.42944ZM19.4763 17.3914C19.0955 18.3484 18.3582 19.0857 17.3962 19.4714C15.9558 20.0427 12.5378 19.9109 10.946 19.9109C9.35425 19.9109 5.9314 20.0378 4.49585 19.4714C3.53882 19.0906 2.80151 18.3533 2.41577 17.3914C1.84448 15.9509 1.97632 12.533 1.97632 10.9412C1.97632 9.34937 1.84937 5.92651 2.41577 4.49097C2.79663 3.53394 3.53394 2.79663 4.49585 2.41089C5.93628 1.8396 9.35425 1.97144 10.946 1.97144C12.5378 1.97144 15.9607 1.84448 17.3962 2.41089C18.3533 2.79175 19.0906 3.52905 19.4763 4.49097C20.0476 5.9314 19.9158 9.34937 19.9158 10.9412C19.9158 12.533 20.0476 15.9558 19.4763 17.3914Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com.br" target="_blank">
+              <svg
+                width="14"
+                height="25"
+                viewBox="0 0 14 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5122 14.0625L13.2065 9.53809H8.86523V6.60205C8.86523 5.36426 9.47168 4.15771 11.416 4.15771H13.3896V0.305664C13.3896 0.305664 11.5986 0 9.88623 0C6.31104 0 3.97412 2.16699 3.97412 6.08984V9.53809H0V14.0625H3.97412V25H8.86523V14.0625H12.5122Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-        <section class="hero">
-            <img src="https://i.imgur.com/7vR0tR4.png" alt="Hero">
-            <div class="content">
-                <div class="container">
-                    <h1>Eternizando momentos que contam histórias</h1>                
-                    <p>Fotografia autêntica, feita para capturar sentimentos reais. Cada clique transforma instantes em memórias inesquecíveis.</p>
-                    <a href="#contato" class="button">Agendar sessão</a>
-                </div>
-            </div>
-        </section>
-        <section id="sobre" class="about">
-            <div class="container">
-                <div class="left">
-                    <img src="https://i.imgur.com/jJnSQu7.png" alt="">
-                </div>
-                <div class="right">
-                    <h2>Por trás de cada clique, uma história</h2>
-                    <p>A fotografia sempre foi mais do que técnica para mim — é sobre conexão. Cada ensaio é uma oportunidade de entender pessoas, momentos e sentimentos, transformando tudo isso em imagens que fazem sentido de verdade.</p>
-                    <p>Trabalho com um olhar leve e atento aos detalhes, buscando capturar o que é natural, espontâneo e único em cada história. Meu objetivo é que você se reconheça em cada foto, como se estivesse revivendo aquele instante.</p>
-                    <a href="#contato" class="button">Conheça meu trabalho</a>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <h2>Casamento</h2>
-                <div class="grid">
-                    <article>
-                        <img src="https://i.imgur.com/OPW7kWP.jpeg" alt="">
-                    </article>
-                    <article>
-                        <img src="https://i.imgur.com/RQoSB0s.png" alt="">
-                    </article>
-                    <article>
-                        <img src="https://i.imgur.com/ngZE1F1.jpeg" alt="">
-                    </article>
-                    <article>
-                        <img src="https://i.imgur.com/7EfxEhL.jpeg" alt="">
-                    </article>
-                </div>
-                <h2>Familia</h2>
-                <div class="grid">
-                    <article>
-                        <img src="https://i.imgur.com/JOT8zsX.jpeg" alt="">
-                    </article>
-                    <article>
-                        <img src="https://i.imgur.com/VPjeg6o.jpeg" alt="">
-                    </article>
-                    <article>
-                        <img src="https://i.imgur.com/MQRoVYv.jpeg" alt="">
-                    </article>
-                    <article>
-                        <img src="https://i.imgur.com/69RbQxC.jpeg" alt="">
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section id="contato" class="contact">
-            <div class="container">
-                <h2>Agendar sessão</h2>
-                <ol>
-                    <li>R. do Rosário, 129 - Centro, Rio de Janeiro - RJ, 20041-005</li>
-                    <li><a href="tel:+5500000000000">(00) 00000-0000</a></li>
-                    <li><a href="mail:email@email.com">email@email.com</a></li>
-                </ol>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.27156784474!2d-43.18135842400028!3d-22.903352179257453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5e891e28bf%3A0xe1fcda50975d36cd!2sECDD%20-%20Faculdade%20de%20Design%2C%20Publicidade%20e%20Marketing%2C%20Cinema%2C%20Anima%C3%A7%C3%A3o%20e%20Games!5e0!3m2!1spt-BR!2sbr!4v1776709518161!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <form action="" method="get">
-                    <h3>Entre em contato</h3>
-                        <input type="text" name="name" id="name" required placeholder="Seu nome" />
-                        <input type="email" name="email" id="email" required placeholder="Seu e-mail" />
-                        <input type="tel" name="phone" id="phone" required placeholder="Seu telefone" />
-                        <textarea name="message" id="message" placeholder="Sua mensagem"></textarea>
-                        <input type="submit" value="Enviar mensagem" class="button" />
-                </form>
-            </div>
-        </section>
+      <section class="hero">
+        <img src="https://i.imgur.com/7vR0tR4.png" alt="Hero" />
+        <div class="content">
+          <div class="container">
+            <h1>Eternizando momentos que contam histórias</h1>
+            <p>
+              Fotografia autêntica, feita para capturar sentimentos reais. Cada
+              clique transforma instantes em memórias inesquecíveis.
+            </p>
+            <a href="#contato" class="button">Agendar sessão</a>
+          </div>
+        </div>
+      </section>
+      <section id="sobre" class="about">
+        <div class="container">
+          <div class="left">
+            <img src="https://i.imgur.com/jJnSQu7.png" alt="" />
+          </div>
+          <div class="right">
+            <h2>Por trás de cada clique, uma história</h2>
+            <p>
+              A fotografia sempre foi mais do que técnica para mim — é sobre
+              conexão. Cada ensaio é uma oportunidade de entender pessoas,
+              momentos e sentimentos, transformando tudo isso em imagens que
+              fazem sentido de verdade.
+            </p>
+            <p>
+              Trabalho com um olhar leve e atento aos detalhes, buscando
+              capturar o que é natural, espontâneo e único em cada história. Meu
+              objetivo é que você se reconheça em cada foto, como se estivesse
+              revivendo aquele instante.
+            </p>
+            <a href="#contato" class="button">Conheça meu trabalho</a>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <h2>Casamento</h2>
+          <div class="grid">
+            <article>
+              <img src="https://i.imgur.com/OPW7kWP.jpeg" alt="" />
+            </article>
+            <article>
+              <img src="https://i.imgur.com/RQoSB0s.png" alt="" />
+            </article>
+            <article>
+              <img src="https://i.imgur.com/ngZE1F1.jpeg" alt="" />
+            </article>
+            <article>
+              <img src="https://i.imgur.com/7EfxEhL.jpeg" alt="" />
+            </article>
+          </div>
+          <h2>Familia</h2>
+          <div class="grid">
+            <article>
+              <img src="https://i.imgur.com/JOT8zsX.jpeg" alt="" />
+            </article>
+            <article>
+              <img src="https://i.imgur.com/VPjeg6o.jpeg" alt="" />
+            </article>
+            <article>
+              <img src="https://i.imgur.com/MQRoVYv.jpeg" alt="" />
+            </article>
+            <article>
+              <img src="https://i.imgur.com/69RbQxC.jpeg" alt="" />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="contato" class="contact">
+        <div class="container">
+          <h2>Agendar sessão</h2>
+          <ol>
+            <li>R. do Rosário, 129 - Centro, Rio de Janeiro - RJ, 20041-005</li>
+            <li><a href="tel:+5500000000000">(00) 00000-0000</a></li>
+            <li><a href="mail:email@email.com">email@email.com</a></li>
+          </ol>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.27156784474!2d-43.18135842400028!3d-22.903352179257453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5e891e28bf%3A0xe1fcda50975d36cd!2sECDD%20-%20Faculdade%20de%20Design%2C%20Publicidade%20e%20Marketing%2C%20Cinema%2C%20Anima%C3%A7%C3%A3o%20e%20Games!5e0!3m2!1spt-BR!2sbr!4v1776709518161!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <form action="" method="get">
+            <h3>Entre em contato</h3>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Seu nome"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Seu e-mail"
+            />
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              placeholder="Seu telefone"
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Sua mensagem"
+            ></textarea>
+            <input type="submit" value="Enviar mensagem" class="button" />
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="logo">
-                <img src="https://i.imgur.com/3yEI1Ew.jpeg" alt="Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#sobre" class="link">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" class="link">Portfólio</a>
-                    </li>
-                    <li>
-                        <a href="#contato" class="link">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="social">
-                <li>
-                    <a href="https://www.instagram.com" target="_blank">
-                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.946 5.33081C7.84058 5.33081 5.33569 7.83569 5.33569 10.9412C5.33569 14.0466 7.84058 16.5515 10.946 16.5515C14.0515 16.5515 16.5564 14.0466 16.5564 10.9412C16.5564 7.83569 14.0515 5.33081 10.946 5.33081ZM10.946 14.5886C8.93921 14.5886 7.29858 12.9529 7.29858 10.9412C7.29858 8.92944 8.93433 7.2937 10.946 7.2937C12.9578 7.2937 14.5935 8.92944 14.5935 10.9412C14.5935 12.9529 12.9529 14.5886 10.946 14.5886ZM18.0945 5.10132C18.0945 5.82886 17.5085 6.40991 16.7859 6.40991C16.0584 6.40991 15.4773 5.82397 15.4773 5.10132C15.4773 4.37866 16.0632 3.79272 16.7859 3.79272C17.5085 3.79272 18.0945 4.37866 18.0945 5.10132ZM21.8103 6.42944C21.7273 4.67651 21.3269 3.12378 20.0427 1.84448C18.7634 0.565185 17.2107 0.164795 15.4578 0.0769043C13.6511 -0.0256348 8.23608 -0.0256348 6.42944 0.0769043C4.6814 0.159912 3.12866 0.560303 1.84448 1.8396C0.560303 3.1189 0.164795 4.67163 0.0769043 6.42456C-0.0256348 8.2312 -0.0256348 13.6462 0.0769043 15.4529C0.159912 17.2058 0.560303 18.7585 1.84448 20.0378C3.12866 21.3171 4.67651 21.7175 6.42944 21.8054C8.23608 21.908 13.6511 21.908 15.4578 21.8054C17.2107 21.7224 18.7634 21.322 20.0427 20.0378C21.322 18.7585 21.7224 17.2058 21.8103 15.4529C21.9128 13.6462 21.9128 8.23608 21.8103 6.42944ZM19.4763 17.3914C19.0955 18.3484 18.3582 19.0857 17.3962 19.4714C15.9558 20.0427 12.5378 19.9109 10.946 19.9109C9.35425 19.9109 5.9314 20.0378 4.49585 19.4714C3.53882 19.0906 2.80151 18.3533 2.41577 17.3914C1.84448 15.9509 1.97632 12.533 1.97632 10.9412C1.97632 9.34937 1.84937 5.92651 2.41577 4.49097C2.79663 3.53394 3.53394 2.79663 4.49585 2.41089C5.93628 1.8396 9.35425 1.97144 10.946 1.97144C12.5378 1.97144 15.9607 1.84448 17.3962 2.41089C18.3533 2.79175 19.0906 3.52905 19.4763 4.49097C20.0476 5.9314 19.9158 9.34937 19.9158 10.9412C19.9158 12.533 20.0476 15.9558 19.4763 17.3914Z"/>
-                        </svg>
-                        Instagram
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank">
-                        <svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5122 14.0625L13.2065 9.53809H8.86523V6.60205C8.86523 5.36426 9.47168 4.15771 11.416 4.15771H13.3896V0.305664C13.3896 0.305664 11.5986 0 9.88623 0C6.31104 0 3.97412 2.16699 3.97412 6.08984V9.53809H0V14.0625H3.97412V25H8.86523V14.0625H12.5122Z"/>
-                        </svg>
-                        Facebook
-                    </a>
-                </li>
-            </ul>
-            <p class="copy">xxxx - 2026</p>
+      <div class="container">
+        <div class="logo">
+          <img src="https://i.imgur.com/3yEI1Ew.jpeg" alt="Logo" />
         </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="#sobre" class="link">Sobre</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="link">Portfólio</a>
+            </li>
+            <li>
+              <a href="#contato" class="link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social">
+          <li>
+            <a href="https://www.instagram.com" target="_blank">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.946 5.33081C7.84058 5.33081 5.33569 7.83569 5.33569 10.9412C5.33569 14.0466 7.84058 16.5515 10.946 16.5515C14.0515 16.5515 16.5564 14.0466 16.5564 10.9412C16.5564 7.83569 14.0515 5.33081 10.946 5.33081ZM10.946 14.5886C8.93921 14.5886 7.29858 12.9529 7.29858 10.9412C7.29858 8.92944 8.93433 7.2937 10.946 7.2937C12.9578 7.2937 14.5935 8.92944 14.5935 10.9412C14.5935 12.9529 12.9529 14.5886 10.946 14.5886ZM18.0945 5.10132C18.0945 5.82886 17.5085 6.40991 16.7859 6.40991C16.0584 6.40991 15.4773 5.82397 15.4773 5.10132C15.4773 4.37866 16.0632 3.79272 16.7859 3.79272C17.5085 3.79272 18.0945 4.37866 18.0945 5.10132ZM21.8103 6.42944C21.7273 4.67651 21.3269 3.12378 20.0427 1.84448C18.7634 0.565185 17.2107 0.164795 15.4578 0.0769043C13.6511 -0.0256348 8.23608 -0.0256348 6.42944 0.0769043C4.6814 0.159912 3.12866 0.560303 1.84448 1.8396C0.560303 3.1189 0.164795 4.67163 0.0769043 6.42456C-0.0256348 8.2312 -0.0256348 13.6462 0.0769043 15.4529C0.159912 17.2058 0.560303 18.7585 1.84448 20.0378C3.12866 21.3171 4.67651 21.7175 6.42944 21.8054C8.23608 21.908 13.6511 21.908 15.4578 21.8054C17.2107 21.7224 18.7634 21.322 20.0427 20.0378C21.322 18.7585 21.7224 17.2058 21.8103 15.4529C21.9128 13.6462 21.9128 8.23608 21.8103 6.42944ZM19.4763 17.3914C19.0955 18.3484 18.3582 19.0857 17.3962 19.4714C15.9558 20.0427 12.5378 19.9109 10.946 19.9109C9.35425 19.9109 5.9314 20.0378 4.49585 19.4714C3.53882 19.0906 2.80151 18.3533 2.41577 17.3914C1.84448 15.9509 1.97632 12.533 1.97632 10.9412C1.97632 9.34937 1.84937 5.92651 2.41577 4.49097C2.79663 3.53394 3.53394 2.79663 4.49585 2.41089C5.93628 1.8396 9.35425 1.97144 10.946 1.97144C12.5378 1.97144 15.9607 1.84448 17.3962 2.41089C18.3533 2.79175 19.0906 3.52905 19.4763 4.49097C20.0476 5.9314 19.9158 9.34937 19.9158 10.9412C19.9158 12.533 20.0476 15.9558 19.4763 17.3914Z"
+                />
+              </svg>
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" target="_blank">
+              <svg
+                width="14"
+                height="25"
+                viewBox="0 0 14 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.5122 14.0625L13.2065 9.53809H8.86523V6.60205C8.86523 5.36426 9.47168 4.15771 11.416 4.15771H13.3896V0.305664C13.3896 0.305664 11.5986 0 9.88623 0C6.31104 0 3.97412 2.16699 3.97412 6.08984V9.53809H0V14.0625H3.97412V25H8.86523V14.0625H12.5122Z"
+                />
+              </svg>
+              Facebook
+            </a>
+          </li>
+        </ul>
+        <p class="copy">xxxx - 2026</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

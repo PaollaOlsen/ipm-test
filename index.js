@@ -1,14 +1,11 @@
+const button = document.getElementById("menu");
 
-const button = document.getElementById('menu');
+button.addEventListener("click", () => {
+  document.querySelector("nav").classList.add("open");
+});
 
-button.addEventListener('click', () => {
-    document.querySelector('nav').classList.add('open');
-  }
-);
+const close = document.getElementById("close");
 
-const close = document.getElementById('close');
-
-close.addEventListener('click', () => {
-    document.querySelector('nav').classList.remove('open');
-  }
-);
+close.addEventListener("click", () => {
+  document.querySelector("nav").classList.remove("open");
+});
